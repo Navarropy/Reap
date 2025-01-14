@@ -68,7 +68,9 @@ Example
 • The script updates the state.json file after each batch, so you can resume the process if interrupted.
 
 
-Notes
+
+## Notes
+
 • The script sanitises location names to remove invalid characters for folder names.
 
 • If there are not enough images in an original folder to meet the IMAGES_PER_FOLDER requirement, the script will copy all available images and issue a warning.
