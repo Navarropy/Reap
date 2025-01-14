@@ -56,12 +56,21 @@ Example
 ## How it works
 
 • The script reads locations from the locations.json file.
+
 • It checks the state.json file to determine which locations have already been processed.
+
 • It processes locations in batches, creating a new folder for each location in the target directory.
+
 • Images are selected from the original folders in a cyclical manner, ensuring even distribution.
+
 • If a location folder already exists, the script skips that location to prevent overwriting.
+
 • The script updates the state.json file after each batch, so you can resume the process if interrupted.
+
+
 Notes
 • The script sanitises location names to remove invalid characters for folder names.
+
 • If there are not enough images in an original folder to meet the IMAGES_PER_FOLDER requirement, the script will copy all available images and issue a warning.
+
 • Make sure the source_dir contains subfolders with images, as the script relies on these to distribute images across location folders.
